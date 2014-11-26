@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Vorgehensdokumentation -->
+<html lang="de-CH" dir="ltr" class="client-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./faf_files/load.php"></script>
+<meta charset="UTF-8">
+<title>Gruppe 2 UBS10 – TBZ_-_Wiki</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="generator" content="MediaWiki 1.23.5">
+<link rel="shortcut icon" href="http://www.tbzwiki.ch/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.tbzwiki.ch/opensearch_desc.php" title="TBZ_-_Wiki (de-ch)">
+<link rel="EditURI" type="application/rsd+xml" href="http://www.tbzwiki.ch/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für «TBZ_-_Wiki»" href="http://www.tbzwiki.ch/index.php?title=Spezial:Letzte_%C3%84nderungen&feed=atom">
+<link rel="stylesheet" href="http://www.tbzwiki.ch/load.php?debug=false&lang=de-ch&modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&only=styles&skin=monobook&*">
+<!--[if IE 6]><link rel="stylesheet" href="/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><style>
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: usr_web133_9-tbz_wiki_2010_:resourceloader:filter:minify-css:7:6c1d24e90626cec584f0869483f983e7 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: usr_web133_9-tbz_wiki_2010_:resourceloader:filter:minify-css:7:9f9511aa4ef920d34591113e825e6a1e */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;-webkit-box-shadow:0 2px 5px 0 #ccc;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(/resources/src/mediawiki.action/images/green-checkmark.png?2014-10-14T19:36:40Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: usr_web133_9-tbz_wiki_2010_:resourceloader:filter:minify-css:7:da669a63b6ce0271464b693345880ddd */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: usr_web133_9-tbz_wiki_2010_:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="http://www.tbzwiki.ch/load.php?debug=false&lang=de-ch&modules=site&only=styles&skin=monobook&*">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: usr_web133_9-tbz_wiki_2010_:resourceloader:filter:minify-css:7:4fb2421bb9b6390eec14f08a1f1b6a7a */</style>
+<script src="./faf_files/load(1).php"></script><script src="./faf_files/load(2).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Gruppe_2_UBS10","wgTitle":"Gruppe 2 UBS10","wgCurRevisionId":7315,"wgRevisionId":7315,"wgArticleId":1068,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de-ch","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.","'\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Gruppe_2_UBS10","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":1,"language":"de-ch","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"de-ch"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: usr_web133_9-tbz_wiki_2010_:resourceloader:filter:minify-js:7:817cffa1713d9ba449f51e76adbed636 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script src="./faf_files/load(3).php"></script>
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns ns-0 ns-subject page-Gruppe_2_UBS10 skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="de-CH"><span dir="auto">Gruppe 2 UBS10</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">Aus TBZ_-_Wiki</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Wechseln zu: <a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#column-one">Navigation</a>, <a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#searchInput">Suche</a></div>
+
+		<!-- start content -->
+<div id="mw-content-text" lang="de-CH" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Inhaltsverzeichnis</h2><span class="toctoggle">&nbsp;[<a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#" class="internal" id="togglelink">Verbergen</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Projektteam"><span class="tocnumber">1</span> <span class="toctext">Projektteam</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Projektauftrag"><span class="tocnumber">2</span> <span class="toctext">Projektauftrag</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Projektablaufplan"><span class="tocnumber">2.1</span> <span class="toctext">Projektablaufplan</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Meilensteine"><span class="tocnumber">2.1.1</span> <span class="toctext">Meilensteine</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Terminplanung"><span class="tocnumber">2.1.2</span> <span class="toctext">Terminplanung</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Aufgabenteilung"><span class="tocnumber">2.1.3</span> <span class="toctext">Aufgabenteilung</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Anforderungsanalyse"><span class="tocnumber">3</span> <span class="toctext">Anforderungsanalyse</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Beispiel"><span class="tocnumber">3.1</span> <span class="toctext">Beispiel</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="./faf_files/faf.html"><span class="tocnumber">4</span> <span class="toctext">Vorgehensdokumentation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Arbeitsrapporte"><span class="tocnumber">4.1</span> <span class="toctext">Arbeitsrapporte</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Erster_Tag_.2809.06.2011.29"><span class="tocnumber">4.1.1</span> <span class="toctext">Erster Tag (09.06.2011)</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Zweiter_Tag_.2816.06.2011.29"><span class="tocnumber">4.1.2</span> <span class="toctext">Zweiter Tag (16.06.2011)</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Dritter_Tag_.2830.06.2011.29"><span class="tocnumber">4.1.3</span> <span class="toctext">Dritter Tag (30.06.2011)</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Vierter_Tag_.2807.07.2011.29"><span class="tocnumber">4.1.4</span> <span class="toctext">Vierter Tag (07.07.2011)</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#F.C3.BCnfter_Tag_.2814.07.2011.29"><span class="tocnumber">4.1.5</span> <span class="toctext">Fünfter Tag (14.07.2011)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#ERM_.26_MySQL-Dump"><span class="tocnumber">5</span> <span class="toctext">ERM &amp; MySQL-Dump</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Testdokumentation"><span class="tocnumber">6</span> <span class="toctext">Testdokumentation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Testdatens.C3.A4tze"><span class="tocnumber">6.1</span> <span class="toctext">Testdatensätze</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10#Schlusswort"><span class="tocnumber">7</span> <span class="toctext">Schlusswort</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Projektteam">Projektteam</span></h2>
+<p>Die Mitarbeiter Dam-Hoon Lee, Davide Giunta und Cristian Vidal sind ein gut eingespieltes Team, welches bereits einige Erfahrung in der Datenbankmodelierung sammeln konnte. Da Cristian Vidal aufgrund seiner beruflichen Laufbahn, ein grosses Know-how im Bereich Projektmanagement hat, ist er vom Team zum Projektleiter gewählt worden.
+</p><p>Gemeinsam werden sich Dam-Hoon, Davide und Cristian das vorliegende Projekt annehmen und realisieren.
+</p>
+<h2><span class="mw-headline" id="Projektauftrag">Projektauftrag</span></h2>
+<p>Im Rahmen des Moduls 153 hat sich das Entwicklerteam bestehend aus Lee Dam-Hoon, Vidal Cristian und Davide Giunta entschieden ein Entity Relationship Modell zu entwerfen für die Realisierung einer ReisebüroDatenbank.
+</p><p>Diese soll den Reisebüro-Beratern ermöglichen Interessenten schnell und Effizient zu beraten, Gäste übersichtlich und geordnet für Reisen Registrieren und deren administrativen Aufgaben best möglich zu Reduzieren. 
+</p>
+<h3><span class="mw-headline" id="Projektablaufplan">Projektablaufplan</span></h3>
+<p>Um das Projekt strukturiert zu realisieren und um zeitliche Engpässe zu vermeiden, haben wir uns entschieden Meilensteine zu definieren sowie eine detaillierte Terminplanung und Aufgabenteilung.
+</p>
+<h4><span class="mw-headline" id="Meilensteine">Meilensteine</span></h4>
+<ul>
+<li> Spezifikation und Konzept ausarbeiten
+</li>
+<li> Datenbank erstellen
+</li>
+<li> Design umsetzen
+</li>
+<li> Kommentieren des ERM (Falls nicht schon vorhanden)
+</li>
+</ul>
+<h4><span class="mw-headline" id="Terminplanung">Terminplanung</span></h4>
+<ul>
+<li>9. Juni 2011		
+<ul>
+<li>Informationen sammeln
+</li>
+<li>Wiki-Initialisieren (erste Einträge)
+</li>
+<li>Erste Ideen über Datenbank aufschreiben
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>16. Juni 2011
+<ul>
+<li>Modellierung des ERM
+</li>
+<li>Überprüfen auf fehlende Informationen und Redundanzen
+</li>
+<li>Teammeeting / Besprechung
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>30. Juni 2011
+<ul>
+<li>Dokumentation
+</li>
+<li>Teammeeting / Besprechung
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>7. Juli 2011
+<ul>
+<li>Dokumentation fertigstellen
+</li>
+<li>Testen (falls notwendig)
+</li>
+<li>Letzte Kontrolle
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>14. Juli 2011
+<ul>
+<li>Abnahme
+</li>
+</ul>
+</li>
+</ul>
+<h4><span class="mw-headline" id="Aufgabenteilung">Aufgabenteilung</span></h4>
+<table border="1">
+<tbody><tr>
+<th>Nr.
+</th>
+<th>Aufgabe
+</th>
+<th>Name
+</th></tr>
+<tr>
+<td>1
+</td>
+<td>Informationen sammeln
+</td>
+<td>Cristian, Davide, Dam-Hoon
+</td></tr>
+<tr>
+<td>2
+</td>
+<td>Thema auswählen
+</td>
+<td>Cristian, Davide, Dam-Hoon
+</td></tr>
+<tr>
+<td>3
+</td>
+<td>ERM zeichnen
+</td>
+<td>Cristian, Davide, Dam-Hoon
+</td></tr>
+<tr>
+<td>4
+</td>
+<td>Arbeitsrapport führen
+</td>
+<td>Cristian
+</td></tr>
+<tr>
+<td>5
+</td>
+<td>ERM auskommentieren
+</td>
+<td>Dam-Hoon
+</td></tr>
+<tr>
+<td>6
+</td>
+<td>MySQL-Dump erstellen
+</td>
+<td>Davide
+</td></tr>
+<tr>
+<td>7
+</td>
+<td>Daten in DB einfügen (Testen)
+</td>
+<td>Davide, Dam-Hoon
+</td></tr>
+<tr>
+<td>8
+</td>
+<td>Dokumentation abschliessen
+</td>
+<td>Cristian
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Anforderungsanalyse">Anforderungsanalyse</span></h2>
+<p>In der Problemanalyse geht es vor allem darum, welche Daten die Datenbank später speichern können soll. Welche Informationen werden gebraucht? Welche Tätigkeiten üben die Mitarbeiter des Reisebüros aus und welche Daten benötigen sie dazu? Hier hilft ein Blick in die Alltag des Unternehmens. Ein paar ganz alltägliche Vorgänge: 
+</p>
+<ul>
+<li>Gäste reservieren/stornieren Reise
+</li>
+<li>Mitarbeiter können auch Reisen reservieren/stornieren
+</li>
+<li>Promoter können neue Offerten einfügen
+</li>
+<li>Der Preis der Unterkünfte kann nach Saison und Kategorie definiert werden
+</li>
+<li>Eine Offerte kann beliebig eine Transportart auswählen
+</li>
+<li>Die Transportarten sind von den Offerten unabhängig
+</li>
+</ul>
+<h3><span class="mw-headline" id="Beispiel">Beispiel</span></h3>
+<p>Nehmen wir das Beispiel eines Mitarbeiters. Dieser möchte sich auch Ferien gönnen. Und da es im Interesse des Reisebüros ist, dass dieser die Ferien in der eigenen Firma buchen kann, muss gewährleistet werden, dass ein Mitarbeiter wie ein Gast Ferien buchen kann. Das heisst, ein Mitarbeiter muss in der Datenbank als Angestellter und als Kunde wiedergefunden werden können. Dies wird gewährleistet dadurch, dass Mitarbeiter und Kunden manche identische Attribute besitzen und diese somit in einer generalisierten Tabelle Personen zusammengefasst werden können. Die Spezialisierung sind dann die Tabellen Mitarbeiter und Kunde.
+</p>
+<h2><span class="mw-headline" id="Vorgehensdokumentation">Vorgehensdokumentation</span></h2>
+<h3><span class="mw-headline" id="Arbeitsrapporte">Arbeitsrapporte</span></h3>
+<h4><span class="mw-headline" id="Erster_Tag_.2809.06.2011.29">Erster Tag (09.06.2011)</span></h4>
+<ul>
+<li> Brainstorming
+</li>
+<li> Informationsquellen zu Hilfe gezogen
+</li>
+<li> Problemstellung analysieren, definieren und abgrenzen
+</li>
+<li> Entscheiden was für eine Datenbank modelliert werden soll¨
+<ul>
+<li> Welchen Nutzen soll Sie haben?
+</li>
+<li> Szenario ausdenken
+</li>
+</ul>
+</li>
+<li> Arbeitsrapport führen
+</li>
+</ul>
+<h4><span class="mw-headline" id="Zweiter_Tag_.2816.06.2011.29">Zweiter Tag (16.06.2011)</span></h4>
+<ul>
+<li> Erste Modellierungsansätze
+</li>
+<li> Normalisierungen erkennen
+</li>
+<li> Beginn Dokumentation
+</li>
+<li> Arbeitsrapport führen
+</li>
+</ul>
+<h4><span class="mw-headline" id="Dritter_Tag_.2830.06.2011.29">Dritter Tag (30.06.2011)</span></h4>
+<ul>
+<li> ERM bearbeiten und auskommentieren
+</li>
+<li> Weiterarbeit an Dokumentation
+</li>
+<li> Arbeitsrapport führen
+</li>
+</ul>
+<h4><span class="mw-headline" id="Vierter_Tag_.2807.07.2011.29">Vierter Tag (07.07.2011)</span></h4>
+<ul>
+<li> Weiterarbeit an Dokumentation
+</li>
+<li> MySQL-Dump erstellen
+</li>
+<li> Arbeitsrapport führen
+</li>
+</ul>
+<h4><span class="mw-headline" id="F.C3.BCnfter_Tag_.2814.07.2011.29">Fünfter Tag (14.07.2011)</span></h4>
+<ul>
+<li> Daten in DB einfügen (Testen)
+</li>
+<li> Dokumentation fertigstellen
+</li>
+<li> Arbeitsrapport führen
+</li>
+<li> Dokumentation-Review
+</li>
+<li> Abgabe
+</li>
+</ul>
+<h2><span class="mw-headline" id="ERM_.26_MySQL-Dump">ERM &amp; MySQL-Dump</span></h2>
+<p>Das ERM und der MySQL-Dump wurden im <a rel="nofollow" class="external text" href="https://bscw.i-ch.ch/">BSCW</a> unter <b>UBS10/Modul 153/Modul_Pruefung/Modulpruefung - Reisebüro</b> abgelegt.
+</p><p>Das ERM kann mit der MySQL Workbench geöffnet werden.
+</p><p>Da die maximale Länge der Kommentare beim Importieren auf 60 Zeichen begrenzt war, mussten wir einige wieder rauslöschen. Die vollständigen Kommentare sind aber nach wie vor beim Workbench File enthalten.
+</p>
+<h2><span class="mw-headline" id="Testdokumentation">Testdokumentation</span></h2>
+<h3><span class="mw-headline" id="Testdatens.C3.A4tze">Testdatensätze</span></h3>
+<p>Als Testdatensätze wurden folgende Inhalte der Datenbank hinzugefügt: 
+</p>
+<ul>
+<li> 3 Postleitzahlen verschiedener Länder wurden eingefügt, um sicherzustellen, dass es sowohl mit nummerischen wie auch alpha-nummerischen Daten umgehen kann
+</li>
+<li> 3 Personen wurden eingefügt, wobei eine Person Kunde, eine normaler Arbeiter und eine Promoter ist. Den Promoter und den normalen Arbeiter sollten beide wiederfindbar sein auf der Tabelle TEMPLOYEE
+</li>
+<li> 1 Unterkunft wurde eingefügt, diese hat 2 Preise
+</li>
+<li> 1 Offerte wurde eingefügt
+</li>
+<li> 1 Transportmittel wurde eingefügt
+</li>
+</ul>
+<h2><span class="mw-headline" id="Schlusswort">Schlusswort</span></h2>
+<p>Unsere Erwartung, die im Verlauf des Moduls erlernten Techniken und Konzepte umzusetzen, 
+wurden weitgehend erfüllt.  
+</p><p>Wir können jetzt auf eine spannende, lehrreiche und auch herausfordernde Zeit zurückblicken. 
+Diverse Schwierigkeiten, wie zum Bespiel die Datenbank überschaubar zu behalten, aber trotzdem möglichst wenig Redundanz, haben uns zeitweise ins Schwitzen gebracht. Doch genau diese Erfahrungen haben dazu gedient, uns wertvolles Wissen in 
+der Datenmodellentwicklung anzueignen.
+</p>
+<!-- 
+NewPP limit report
+CPU time usage: 0.020 seconds
+Real time usage: 0.019 seconds
+Preprocessor visited node count: 74/1000000
+Preprocessor generated node count: 80/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key usr_web133_9-tbz_wiki_2010_:pcache:idhash:1068-0!*!*!!de-ch!*!* and timestamp 20141126095505 and revision id 7315
+ -->
+</div><div class="printfooter">
+Von «<a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10&oldid=7315">http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10&amp;oldid=7315</a>»</div>
+		<div id="catlinks" class="catlinks catlinks-allhidden"></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigationsmenü</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Ansichten</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10" title="Seiteninhalt anzeigen [alt-shift-c]" accesskey="c">Seite</a></li>
+				<li id="ca-talk" class="new"><a href="http://www.tbzwiki.ch/index.php?title=Diskussion:Gruppe_2_UBS10&action=edit&redlink=1" title="Diskussion zum Seiteninhalt [alt-shift-t]" accesskey="t">Diskussion</a></li>
+				<li id="ca-viewsource"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10&action=edit" title="Diese Seite ist geschützt. Ihr Quelltext kann dennoch angesehen und kopiert werden. [alt-shift-e]" accesskey="e">Quelltext anzeigen</a></li>
+				<li id="ca-history"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10&action=history" rel="archives" title="Frühere Versionen dieser Seite [alt-shift-h]" accesskey="h">Versionsgeschichte</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Meine Werkzeuge</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-createaccount"><a href="http://www.tbzwiki.ch/index.php?title=Spezial:Anmelden&returnto=Gruppe+2+UBS10&type=signup">Benutzerkonto erstellen</a></li>
+				<li id="pt-login"><a href="http://www.tbzwiki.ch/index.php?title=Spezial:Anmelden&returnto=Gruppe+2+UBS10" title="Sich anzumelden wird zwar gerne gesehen, ist aber keine Pflicht. [alt-shift-o]" accesskey="o">Anmelden</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="http://www.tbzwiki.ch/index.php?title=Hauptseite" style="background-image: url(/skins/common/images/TBZLogo.gif);" title="Hauptseite"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class="pBody">
+			<ul>
+				<li id="n-mainpage-description"><a href="http://www.tbzwiki.ch/index.php?title=Hauptseite" title="Hauptseite besuchen [alt-shift-z]" accesskey="z">Hauptseite</a></li>
+				<li id="n-Klassen-Portal"><a href="http://www.tbzwiki.ch/index.php?title=Klassenportal">Klassen-Portal</a></li>
+				<li id="n-Modul-Portal"><a href="http://www.tbzwiki.ch/index.php?title=Modulportal">Modul-Portal</a></li>
+				<li id="n-Sandkasten"><a href="http://www.tbzwiki.ch/index.php?title=Sandkasten">Sandkasten</a></li>
+				<li id="n-currentevents"><a href="http://www.tbzwiki.ch/index.php?title=TBZ_-_Wiki:Aktuelle_Ereignisse" title="Hintergrundinformationen zu aktuellen Ereignissen">Aktuelle Ereignisse</a></li>
+				<li id="n-recentchanges"><a href="http://www.tbzwiki.ch/index.php?title=Spezial:Letzte_%C3%84nderungen" title="Liste der letzten Änderungen in TBZ_-_Wiki [alt-shift-r]" accesskey="r">Letzte Änderungen</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Suche</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="http://www.tbzwiki.ch/index.php" id="searchform">
+				<input type="hidden" name="title" value="Spezial:Suche">
+				<input type="search" name="search" placeholder="Suchen" title="TBZ_-_Wiki durchsuchen [alt-shift-f]" accesskey="f" id="searchInput" autocomplete="off">
+				<input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite, die exakt dem eingegebenen Namen entspricht." id="searchGoButton" class="searchButton">&nbsp;
+				<input type="submit" name="fulltext" value="Suchen" title="Suche nach Seiten, die diesen Text enthalten" id="mw-searchButton" class="searchButton">
+			</form>
+
+					</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-support" role="navigation">
+		<h3>support</h3>
+		<div class="pBody">
+			<ul>
+				<li id="n-Editierhilfe.21.21.21"><a href="http://www.tbzwiki.ch/index.php?title=Hilfe:Bearbeiten">Editierhilfe!!!</a></li>
+				<li id="n-Wiki-Infos"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Wiki-Infos</a></li>
+				<li id="n-MediaWiki-Infos"><a href="http://www.mediawiki.org/">MediaWiki Infos</a></li>
+				<li id="n-FAQ"><a href="http://www.tbzwiki.ch/index.php?title=TBZ_-_Wiki:FAQ">FAQ</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Werkzeuge</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://www.tbzwiki.ch/index.php?title=Spezial:Linkliste/Gruppe_2_UBS10" title="Liste aller Seiten, die hierher verlinken [alt-shift-j]" accesskey="j">Links auf diese Seite</a></li>
+				<li id="t-recentchangeslinked"><a href="http://www.tbzwiki.ch/index.php?title=Spezial:%C3%84nderungen_an_verlinkten_Seiten/Gruppe_2_UBS10" title="Letzte Änderungen an Seiten, die von hier verlinkt sind [alt-shift-k]" accesskey="k">Änderungen an verlinkten Seiten</a></li>
+				<li id="t-specialpages"><a href="http://www.tbzwiki.ch/index.php?title=Spezial:Spezialseiten" title="Liste aller Spezialseiten [alt-shift-q]" accesskey="q">Spezialseiten</a></li>
+				<li id="t-print"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10&printable=yes" rel="alternate" title="Druckansicht dieser Seite [alt-shift-p]" accesskey="p">Druckversion</a></li>
+				<li id="t-permalink"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10&oldid=7315" title="Dauerhafter Link zu dieser Seitenversion">Permanenter Link</a></li>
+				<li id="t-info"><a href="http://www.tbzwiki.ch/index.php?title=Gruppe_2_UBS10&action=info">Seiteninformationen</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-poweredbyico">
+		<a href="http://www.mediawiki.org/"><img src="./faf_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> Diese Seite wurde zuletzt am 14. Juli 2011 um 10:58 Uhr geändert.</li>
+		<li id="viewcount">Diese Seite wurde bisher 1'925 mal abgerufen.</li>
+		<li id="privacy"><a href="http://www.tbzwiki.ch/index.php?title=TBZ_-_Wiki:Datenschutz" title="TBZ - Wiki:Datenschutz">Datenschutz</a></li>
+		<li id="about"><a href="http://www.tbzwiki.ch/index.php?title=TBZ_-_Wiki:%C3%9Cber_TBZ_-_Wiki" title="TBZ - Wiki:Über TBZ - Wiki">Über TBZ_-_Wiki</a></li>
+		<li id="disclaimer"><a href="http://www.tbzwiki.ch/index.php?title=TBZ_-_Wiki:Impressum" title="TBZ - Wiki:Impressum">Impressum</a></li>
+	</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
+}</script>
+<script src="./faf_files/load(4).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":143});
+}</script><div class="suggestions" style="display: none; font-size: 11px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
